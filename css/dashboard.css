@@ -1,0 +1,34 @@
+.tile {
+    color: white;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    font-size:2rem;
+  }
+
+  .tile-footer a {
+    color:white;
+  }
+
+.tile-content {
+    background-color: #058105;
+    min-height: 220px;
+    margin-bottom: 10px;
+}
+
+.tile-description {
+  height: 8rem;
+  font-size: 3.5rem;
+  margin-bottom:3rem;
+}
+
+.tile-label{
+  font-size:1.5rem;
+  height:7rem;
+  color: white;
+  text-align: center;
+}
+
+.tile-footer {
+  height:1rem;
+}
