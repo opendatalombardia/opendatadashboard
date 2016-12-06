@@ -1,3 +1,8 @@
+div#intro {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 .tile {
     color: white;
     position: relative;

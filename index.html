@@ -21,9 +21,10 @@
   <body id="pagina">
     <div class="container">
       <div class="row">
-        <h3>Dashboard dei dataset più visti del sito http://dati.lombardia.it</h3>
-          <p>Questa pagina visualizza il numero di righe dei dataset più visti del sito http://dati.lombardia.it. In particolare per ogni dataset, al quale è associato un ID, viene eseguita la seguente funzione
-            <pre>
+        <div id="intro">
+          <h3>Dashboard dei dataset più visti del sito http://dati.lombardia.it</h3>
+            <p>Questa pagina visualizza il numero di righe dei dataset più visti del sito http://dati.lombardia.it. In particolare per ogni dataset, al quale è associato un ID, viene eseguita la seguente funzione
+              <pre>
 getData(
         "https://www.dati.lombardia.it/resource/" + datasets[i].id,
         "$select=count(*)",
@@ -31,11 +32,12 @@ getData(
         datasets[i].name
         );
 </pre>
-            La funzione <code>$select=count(*)</code> conta il numero di righe del singolo dataset, in linguaggio SoQL.
-            <br>Questo è un esempio di query: <code>https://www.dati.lombardia.it/resource/ywm2-vqgc.json?$select=count(*)</code>
-            <br>Per eseguirla non è necessaria alcuna autenticazione. L'applicazione è interamente lato client: quanto l'utente apre la pagine del browser, viene scaricato il file <code>js/querysocrata.js</code> che esegue la chiamata ed effettua il conteggio.
-            <br><strong>Docs</strong>: Api e documentazione sono sul sito di Socrata, <a href="https://dev.socrata.com/docs/queries/">disponibili a questo indirizzo</a>
-          </p>
+              La funzione <code>$select=count(*)</code> conta il numero di righe del singolo dataset, in linguaggio SoQL.
+              <br>Questo è un esempio di query: <code>https://www.dati.lombardia.it/resource/ywm2-vqgc.json?$select=count(*)</code>
+              <br>Per eseguirla non è necessaria alcuna autenticazione. L'applicazione è interamente lato client: quanto l'utente apre la pagine del browser, viene scaricato il file <code>js/querysocrata.js</code> che esegue la chiamata ed effettua il conteggio.
+              <br><strong>Docs</strong>: Api e documentazione sono sul sito di Socrata, <a href="https://dev.socrata.com/docs/queries/">disponibili a questo indirizzo</a>
+            </p>
+        </div>
       </div>
     </div>
     <div class="container">
